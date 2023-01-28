@@ -1,4 +1,4 @@
-﻿// ex1
+﻿// ex1 Napisz program w C#, który stworzy dwie zmienne int i sprawdzi czy są one równe czy nie.
 
 int var1 = 5;
 int var2 = 5;
@@ -12,7 +12,7 @@ else
     Console.WriteLine($"{var1} i {var2} nie są równe");
 }
 
-// ex2
+// ex2 Napisz program w C#, który sprawdzi czy podana przez użytkownika liczba jest parzysta czy nieparzysta.
 
 double var3;
 Console.WriteLine("Podaj jakąś liczbę");
@@ -28,7 +28,7 @@ else
     Console.WriteLine($"Liczba {var3} jest nie parzysta");
 }
 
-// ex3
+// ex3 Napisz program w C#, który sprawdzi czy podana przez użytkownika liczba jest dodatnia czy ujemna.
 
 double var4;
 Console.WriteLine("Podaj jakąś liczbę");
@@ -46,7 +46,7 @@ switch (var4)
         break;
 }
 
-// ex4
+// ex4 Napisz program w C#, który sprawdzi czy podany przez użytkownika rok jest rokiem przestępnym.
 
 double year;
 
@@ -63,7 +63,8 @@ else
     Console.WriteLine($"Rok {year} nie jest rokiem przestępnym");
 }
 
-// ex5
+// ex5 Napisz program w C#, który sprawdzi czy podany przez użytkownika wiek uprawnia go do ubiegania się o stanowisko posła, premiera, sentarora, prezydenta.
+
 double yearOfBirth;
 Console.WriteLine("Podaj rok urodzenia");
 
@@ -78,7 +79,8 @@ else
     Console.WriteLine("Nie możesz zostać posłem");
 }
 
-// ex6
+// ex6 Napisz program w C#, który pobierze wzrost użytkownika i przypisze mu wymyśloną kategorię wzrostu.
+
 double height;
 Console.WriteLine("Podaj swój wzrost w cm");
 
@@ -116,7 +118,7 @@ else
     Console.WriteLine("Podaj wartość większą od 0");
 }
 
-// ex7
+// ex7 Napisz program w C#, który pobierze 3 liczby od użytkownika i sprawdzi, która jest największa
 
 
 double var5;
@@ -147,7 +149,13 @@ else if (var7 > var6 && var7 > var5)
     Console.WriteLine($"Liczba {var7} jest największa z podanych liczb");
 }
 
-// ex8
+// ex8 Napisz program, który sprawdzi, czy kandydat może ubiegać się o miejsce na studiach wg. Następujących kryteriów: 
+Wynik z Matury z matematyki powyżej 70 
+Wynik z fizyki powyżej 55 
+Wynik z chemii powyżej 45 
+Łączny wynik z 3 przedmiotów powyżej 180 
+Albo 
+Wynik z matematyki i jednego przedmiotu powyżej 150
 
 double math;
 double phisics;
@@ -176,7 +184,7 @@ else
 }
 
 
-// ex9
+// ex9 Napisz program, który odczyta temperaturę I zwróci nazwę jak w poniższych kryteriach
 
 double temp;
 
@@ -209,7 +217,8 @@ else if (temp >= 40)
 }
 
 
-// ex10
+// ex10 Napisz program, który sprawdzi, czy z 3 podanych długości można stworzyć trójkąt
+
 double side1;
 double side2;
 double side3;
@@ -232,7 +241,7 @@ else
     Console.WriteLine("Z podanych boków nie można zbudować trójkąt");
 }
 
-// ex11
+// ex11 Napisz program, który zmieni ocenę ucznia na jej opis wg podanej tabeli:
 
 double grade;
 
@@ -267,7 +276,7 @@ switch (grade)
 
 }
 
-// ex12
+// ex12 Napisz program, który pobierze numer dnia tygodnia i wyświetli jego nazwę
 
 double dayOfWeek;
 
@@ -306,7 +315,7 @@ switch (dayOfWeek)
 
 }
 
-// ex13
+// ex13 Napisz program, który będzie posiadał proste menu (wg. Wzoru poniżej) I będzie prostym kalkulatorem
 
 
 double a;
