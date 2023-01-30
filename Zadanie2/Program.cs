@@ -69,13 +69,29 @@ Console.WriteLine("Podaj rok urodzenia");
 
 double.TryParse(Console.ReadLine(), out yearOfBirth);
 
-if (2023 - yearOfBirth >= 21)
+double age = 2023 - yearOfBirth;
+
+if (age >= 21 && age <30)
 {
     Console.WriteLine("Możesz zostać posłem");
 }
+
+else if (age >= 30 && age < 35)
+{
+    Console.WriteLine("Możesz zostać premierem");
+}
+
+else if (age >=35 && age < 40)
+{
+    Console.WriteLine("Możesz zostać senatorem");
+}
+else if (age <= 40)
+{
+    Console.WriteLine("Możesz zostać prezydentem");
+}
 else
 {
-    Console.WriteLine("Nie możesz zostać posłem");
+    Console.WriteLine("Musisz jeszcze podrosnąć");
 }
 
 // ex6
@@ -85,30 +101,29 @@ Console.WriteLine("Podaj swój wzrost w cm");
 double.TryParse(Console.ReadLine(), out height);
 if (height > 0)
 {
-
-    if (height > 0 && height < 140)
+    if (height >= 200)
     {
-        Console.WriteLine("Jesteś niziołkiem");
+        Console.WriteLine("Jesteś gigantem");
     }
-    else if (height >= 140 && height < 160)
-    {
-        Console.WriteLine("Jesteś krasnoludem");
-    }
-    else if (height >= 160 && height < 180)
-    {
-        Console.WriteLine("Jesteś człowiekiem");
-    }
-    else if (height >= 160 && height < 180)
-    {
-        Console.WriteLine("Jesteś człowiekiem");
-    }
-    else if (height >= 180 && height < 200)
+    else if (height >= 180)
     {
         Console.WriteLine("Jesteś drzewcem");
     }
-    else if (height >= 200)
+    else if (height >= 160)
     {
-        Console.WriteLine("Jesteś gigantem");
+        Console.WriteLine("Jesteś człowiekiem");
+    }
+    else if (height >= 140)
+    {
+        Console.WriteLine("Jesteś krasnoludem");
+    }
+    else if (height >= 120)
+    {
+        Console.WriteLine("Jesteś niziołkiem");
+    }
+    else if (height >= 100)
+    {
+        Console.WriteLine("Jesteś dzieckiem");
     }
 }
 else
@@ -183,31 +198,37 @@ double temp;
 Console.WriteLine("Podaj aktualną temperaturę");
 double.TryParse(Console.ReadLine(), out temp);
 
-if (temp < 0)
-{
-    Console.WriteLine("CHolernie piździ");
-}
-else if (temp >= 0 && temp <=10)
-{
-    Console.WriteLine("Zimno");
-}
-else if (temp > 10 && temp <= 20)
-{
-    Console.WriteLine("Chłodno");
-}
-else if (temp > 20 && temp <= 30)
-{
-    Console.WriteLine("W sam raz");
-}
-else if (temp > 30 && temp < 40)
-{
-    Console.WriteLine("Zaczyna być słabo, bo gorąco");
-}
-else if (temp >= 40)
+
+
+ if (temp >= 40)
 {
     Console.WriteLine("A weź, wyprowadzam się na Alaskę");
 }
 
+else if (temp >= 30)
+{
+    Console.WriteLine("Zaczyna być słabo, bo gorąco");
+}
+
+else if (temp >= 20)
+{
+    Console.WriteLine("W sam raz");
+}
+
+else if (temp >= 10 )
+{
+    Console.WriteLine("Chłodno");
+}
+
+else if (temp >= 0)
+{
+    Console.WriteLine("Zimno");
+}
+
+else
+{
+    Console.WriteLine("CHolernie piździ");
+}
 
 // ex10
 double side1;
@@ -223,14 +244,15 @@ double.TryParse(Console.ReadLine(), out side2);
 Console.WriteLine("Podaj długość trzeciego boku trójkąta");
 double.TryParse(Console.ReadLine(), out side3);
 
-if ((side1 + side2)>side3 || (side2 + side3)> side1 || (side1 + side3)> side2)
+if ((side1 + side2 > side3) && (side1 + side3 > side2) && (side2 + side3 > side1))
 {
-    Console.WriteLine("Z podanych boków można zbudować trójkąt");
+    Console.WriteLine("Mozna zbudowac trójkąt");
 }
 else
 {
-    Console.WriteLine("Z podanych boków nie można zbudować trójkąt");
+    Console.WriteLine("Nie można zbudować trójkąta");
 }
+    
 
 // ex11
 
@@ -342,8 +364,15 @@ switch (chosenOption)
         break;
 
     case 4:
-        double dzielenie = a / b;
-        Console.WriteLine($"Twój wynik to {dzielenie}");
+        if (b != 0)
+        {
+            double dzielenie = a / b;
+            Console.WriteLine($"Twój wynik to {dzielenie}");
+        }
+        else
+        {
+            Console.WriteLine("Nie można dzielić przez 0");
+        }
         break;
 
     default:
