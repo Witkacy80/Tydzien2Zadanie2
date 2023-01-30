@@ -165,12 +165,12 @@ else if (var7 > var6 && var7 > var5)
 }
 
 // ex8 Napisz program, który sprawdzi, czy kandydat może ubiegać się o miejsce na studiach wg. Następujących kryteriów: 
-Wynik z Matury z matematyki powyżej 70 
-Wynik z fizyki powyżej 55 
-Wynik z chemii powyżej 45 
-Łączny wynik z 3 przedmiotów powyżej 180 
-Albo 
-Wynik z matematyki i jednego przedmiotu powyżej 150
+//Wynik z Matury z matematyki powyżej 70 
+//Wynik z fizyki powyżej 55 
+//Wynik z chemii powyżej 45 
+//Łączny wynik z 3 przedmiotów powyżej 180 
+//Albo 
+//Wynik z matematyki i jednego przedmiotu powyżej 150
 
 double math;
 double phisics;
