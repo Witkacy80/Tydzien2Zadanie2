@@ -378,6 +378,5 @@ switch (chosenOption)
     default:
         Console.WriteLine("Wybrano niepoprawny numer akcji");
         break;
-
 }
 
